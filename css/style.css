@@ -1,0 +1,95 @@
+html{
+  font-size: 62.5%;
+  font-family: 'Itim', cursive;
+}
+.logo{
+  font-size: 2.3rem;
+  position: relative;
+}
+.logo--header{
+  width: 8rem;
+  margin:1rem 0 0 1rem;
+}
+.titulo--header{
+  display: inline-block;
+  position: absolute;
+  margin:3rem 0 0 1rem;
+ 
+
+}
+#menu{
+	width: 3.5rem;
+	height: 3rem;
+	margin: 3.5rem 1.5rem 2rem 2rem;
+	cursor: pointer;
+}
+.bar{
+	height: 5px;
+	width: 100%;
+	background-color: #952cf8;
+	display: block;
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+#bar1{
+	transform: translateY(-4px);
+}
+#bar3{
+	transform: translateY(4px);
+}
+.nav li a{
+	color: #fff;
+	text-decoration: none;
+}
+.nav li a:hover{
+	font-weight: bold;
+}
+.nav li{
+	list-style: none;
+	padding: 1.6rem 0;
+  font-size: 2.2rem;
+}
+.nav{
+	padding: 0;
+	margin: 0 2.5rem;
+	transition: 0.3s ease;
+	display: none;
+}
+.menu-bg, #menu-bar{
+	top: 0;
+	right: 0;
+	position: absolute;
+}
+.menu-bg{
+	z-index: 1;
+	width: 0;
+	height: 0;
+	margin: 3rem 0 2rem 2rem;
+	background: radial-gradient(circle,#b85cee,#70dff3);
+	border-radius: 50%;
+	transition: 0.3s ease;
+}
+#menu-bar{
+	z-index: 2;	
+}
+.change-bg{
+	width: 55rem;
+	height: 54rem;
+	transform: translate(60%,-30%);
+}
+.change .bar{
+	background-color: white;
+}
+.change #bar1{
+	transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3{
+	transform: translateY(-6px) rotate(45deg);
+}
+.change #bar2{
+	opacity: 0;
+}
+.change{
+	display: block;
+  margin-left: -4rem;
+}

@@ -194,7 +194,7 @@ html{
 }
 .swiper-container .s2{
 	width: 100%;
-	height: 70%;
+	height: 80%;
 	padding-top: 50px;
 	padding-bottom: 50px;
 
@@ -204,15 +204,15 @@ html{
 	background-position: center;
 	background-size: cover;
 	width: 20rem;
-	height: 10rem;
+	height: 15rem;
   }
  
   .swiper-slide .s2 img {
 	display: block;
-	width: 10rem;
+	object-fit: fill;
   }
   .swiper-pagination{
-	  margin-bottom: 20rem;
+	  margin-bottom: 10rem;
   }
   .galeria{
 	  position: absolute;
@@ -230,9 +230,25 @@ html{
 	 text-align: center;
 	 position: absolute;
 	 top: 0;
-	 margin-top: 50rem;
+	 margin-top: 55rem;
 
 	 }
+
+.banner{
+	width: 100%;
+	height: 85vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	width: 100%;
+}
 .novelas{
 	background-color: yellow;
 	height: 100vh;

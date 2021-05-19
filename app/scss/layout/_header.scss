@@ -1,3 +1,47 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+.header {
+    background: rgb(209, 109, 184);
+
+    &__nav {
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 10vh;
+        padding: 2rem;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex: 1 1 40rem;
+
+        }
+    }
+    
+#logo {
+    font-family: 'Pattaya', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    flex: 2 1 40rem;
+}
+
+}
+
+@media (max-width:932px){
+    html{
+        font-size: 45%;
+    }
+    .header__nav {
+        text-align: center;
+
+        #logo{
+            padding: 1rem;
+        }
+    }
+    
+}
+

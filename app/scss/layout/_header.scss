@@ -2,7 +2,7 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 .header {
-    background: rgb(209, 109, 184);
+    background: rgba(255, 81, 211, 0.3);
 
     &__nav {
         display: flex;
@@ -18,7 +18,6 @@
             justify-content: space-around;
             align-items: center;
             flex: 1 1 40rem;
-
         }
     }
     
@@ -31,12 +30,16 @@
 
 }
 
+
+
 @media (max-width:932px){
     html{
-        font-size: 45%;
+        font-size: 58%;
     }
     .header__nav {
         text-align: center;
+
+      
 
         #logo{
             padding: 1rem;
@@ -44,4 +47,44 @@
     }
     
 }
+@media (min-width:412px){
+    html{
+        font-size: 64%;
+    }
+    .header__nav{
+        li{
 
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+        }
+        ul a{
+            font-size: 1.8rem;
+           
+        }
+    }
+}
+@media(max-width:375px){
+    html{
+        font-size: 48%;
+    }
+    .header__nav{
+       
+ 
+            &:not(:last-child){
+                margin-right: 5px;
+            }
+        }
+    }
+@media(max-width:280px){
+    html{
+        font-size: 40%;
+    }
+    .header__nav{
+       
+ 
+            &:not(:last-child){
+                margin-right: 5px;
+            }
+        }
+    }

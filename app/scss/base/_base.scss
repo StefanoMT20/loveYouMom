@@ -17,6 +17,24 @@ a{
 ul{
     list-style: none;
 }
+h1{
+    font-size: 2.6rem;
+}
+h2{
+    font-size: 4.8rem;
+    margin: 0;
+}
+h3{
+    font-size: 3rem;
+    font-weight: 400;
+}
+h4,h5{
+    font-size: 2.8rem;
+}
+li,button, label,input,p, a{
+
+    font-size: 2rem;
+}
 body{
     font-family: 'Public Sans', sans-serif;
     font-size: 1.5rem;

@@ -1,12 +1,13 @@
 .hero{
-    position: relative;
-   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     min-height: 80vh;
+    
+    position: relative;
+  
     h2 {
         font-size: 8rem;
         margin-bottom: 5rem;

@@ -2,7 +2,7 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 .header {
-    background: rgba(255, 81, 211, 0.3);
+    background: linear-gradient(gray, transparent);
 
     &__nav {
         display: flex;

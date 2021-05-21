@@ -98,6 +98,12 @@ body {
   }
 }
 
+@media (min-width: 412px) {
+  html {
+    font-size: 64%;
+  }
+}
+
 @media (max-width: 375px) {
   html {
     font-size: 48%;
@@ -117,32 +123,13 @@ body {
 }
 
 .hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   min-height: 80vh;
-}
-
-.hero .banner {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero .banner video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: -1;
 }
 
 .hero h2 {
@@ -161,5 +148,21 @@ body {
   margin-top: -17px;
   background: gray;
   height: 100vh;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 /*# sourceMappingURL=main.css.map */

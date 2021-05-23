@@ -1,0 +1,45 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.header{
+    color: white;
+    &__nav{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+        min-height: 10vh;
+        padding: 2rem;
+        flex-wrap: wrap;
+    }
+    & ul{
+        display: flex;
+        flex: 1 1 40rem;
+        align-items: center;
+        justify-content: space-around;
+        text-align:center;
+    }
+#logo{
+    flex: 2 1 40rem;
+}
+}
+@media(max-width:932px){
+    html{
+        font-size: 60%;
+    }
+    nav{
+        text-align: center;
+    }
+    #logo{
+       
+        margin-bottom: 2.5rem;
+    }
+}
+@media(max-width:360px){
+    html{
+        font-size: 55%
+    }
+    h2{
+        line-height: 1.2;
+    }
+}

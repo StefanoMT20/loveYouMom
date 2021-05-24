@@ -1,0 +1,53 @@
+.musica{
+    padding: 5rem;  
+    min-height: 100vh;
+    width: 100vw;
+    opacity: 0.5;
+    background: repeating-linear-gradient( 45deg, #444cf7, #444cf7 11px, #e5e5f7 11px, #e5e5f7 55px );
+    text-align: center;
+
+    h2{
+        display: inline-block;
+        border-bottom: 1px solid white;
+        font-size: 3rem;
+        color: red;
+    }
+    &__container{
+    
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+        padding: 4rem;
+
+        .player{
+    
+            position: relative;
+            width: 35rem;
+            background: white;
+            box-shadow: 0 50px 80px rgba($color: #000000, $alpha: 0.25);
+            margin: 2rem;
+            .imgbox{
+                position: relative;
+                width:100%;
+                height: 35rem;
+    
+                img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:815px){
+    .musica__container{
+        display: flex;
+        flex-direction: column;
+    }
+}
